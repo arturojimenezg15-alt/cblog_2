@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class publication(models.Model):
+class Publication(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField()
     published_date = models.DateTimeField(auto_now_add=True)

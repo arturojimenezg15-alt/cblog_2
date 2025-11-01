@@ -1,11 +1,11 @@
 from django.shortcuts import render
-from .models import publication
+from .models import Publication
 from django.views.generic import ListView
 # Create your views here.
 
 
 class PublicationListView(ListView):
-    model = publication
+    model = Publication
     template_name = 'home.html'
 
     
